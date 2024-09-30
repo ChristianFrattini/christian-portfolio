@@ -34,10 +34,10 @@ const About = () => {
           React, Next.js, Node.js, and MongoDB
         </span>{" "}
         with additional proficiency in{" "}
-        <span className="font-medium">TypeScript</span> but I'm always eager to
-        learn new technologies and broaden my knowledge. I am currently seeking
-        for a <span className="font-medium">full-time position</span> as a
-        software developer.
+        <span className="font-medium">TypeScript</span> but I&apos;m always
+        eager to learn new technologies and broaden my knowledge. I am currently
+        seeking for a <span className="font-medium">full-time position</span> as
+        a software developer.
       </p>
 
       <p>
