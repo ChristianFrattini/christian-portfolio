@@ -41,9 +41,8 @@ const About = () => {
       </p>
 
       <p>
-        <span className="italic">In my free time</span>, In my free time, I
-        enjoy exploring new places, traveling, hiking, and maintaining a healthy
-        lifestyle.
+        <span className="italic">In my free time</span>, I enjoy exploring new
+        places, traveling, hiking, and maintaining a healthy lifestyle.
       </p>
     </motion.section>
   );
