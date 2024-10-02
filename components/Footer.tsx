@@ -10,7 +10,7 @@ const Footer = () => {
       <p className="text-xs">
         <span className="font-semibold">About this website:</span> built with
         React & Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email &
-        Resend, Vercel hosting.
+        Resend. Deployed with Vercel.
       </p>
     </footer>
   );
