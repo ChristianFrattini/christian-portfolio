@@ -39,7 +39,9 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id={"contact"}
-      className={"mb-20 sm:mb-28 w-[min(100%, 38rem)] mx-3 text-center"}
+      className={
+        "mb-20 scroll-mt-28 sm:mb-28 w-[min(100%, 38rem)] mx-3 text-center"
+      }
       initial={{
         opacity: 0,
       }}
