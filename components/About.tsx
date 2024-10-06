@@ -37,7 +37,8 @@ const About = () => {
         <span className="font-medium">TypeScript</span> but I&apos;m always
         eager to learn new technologies and broaden my knowledge. I am currently
         seeking for a <span className="font-medium">full-time position</span> as
-        a software developer.
+        a software developer{" "}
+        <span className="font-medium">(open for relocation)</span>.
       </p>
 
       <p>
