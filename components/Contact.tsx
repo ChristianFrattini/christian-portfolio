@@ -7,18 +7,33 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/SendEmail.action";
 import toast from "react-hot-toast";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0.75);
 
   // Using useState to manage pending state
   const [pending, setPending] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+
+  // Update reCAPTCHA token
+  const handleRecaptchaChange = (token: string | null) => {
+    setRecaptchaToken(token);
+  };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setPending(true);
 
     const formData = new FormData(event.currentTarget);
+
+    if (recaptchaToken) {
+      formData.append("recaptchaToken", recaptchaToken);
+    } else {
+      toast.error("Please complete the reCAPTCHA challenge.");
+      setPending(false);
+      return;
+    }
 
     try {
       const { data, error } = await sendEmail(formData); // Call your email sending function here
@@ -87,6 +102,13 @@ const Contact = () => {
           required
           maxLength={500}
           name="message"
+        />
+
+        {/* Add ReCAPTCHA Component */}
+        <ReCAPTCHA
+          sitekey={"6Ldbv1wqAAAAAP9ZMxTo3wULO07NWEPx88g2BSu5"} //?????? TO ADD IN THE ENV FILE???????
+          onChange={handleRecaptchaChange}
+          className="my-4" // Optional: Add some margin for better spacing
         />
 
         <button
