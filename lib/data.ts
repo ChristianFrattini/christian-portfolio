@@ -6,6 +6,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import brainwave from "@/public/brainwave.png";
 import travelapp from "@/public/travelapp.png";
 import crownclothing from "@/public/crownclothing.png";
+import uniShoes from "@/public/unishoes.png";
 
 export const links = [
   {
@@ -55,6 +56,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "UniShoes",
+    description:
+      "A shoe eCommerce website built with Next.js and TypeScript, featuring Kinde Auth for user authentication, Neon PostgreSQL with Prisma for data management, and Redis for performance optimization.",
+    tags: ["Next.js", "Neon", "Prisma", "Kinde-Auth", "Redis"],
+    imageUrl: uniShoes,
+    link: "https://unishoes.vercel.app/",
+  },
+  {
     title: "Brainwave",
     description:
       "This project involved building a responsive landing page with animations, utilizing various styling techniques and methodologies",
@@ -97,4 +106,8 @@ export const skillsData = [
   "Framer Motion",
   "Firebase",
   "Appwrite",
+  "PostgreSQL Neon",
+  "Prisma",
+  "Kinde-Auth",
+  "Redis",
 ] as const;
