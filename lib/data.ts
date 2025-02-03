@@ -7,6 +7,7 @@ import brainwave from "@/public/brainwave.png";
 import travelapp from "@/public/travelapp.png";
 import crownclothing from "@/public/crownclothing.png";
 import uniShoes from "@/public/unishoes.png";
+import aichatbot from "@/public/aichatbot.png";
 
 export const links = [
   {
@@ -63,13 +64,22 @@ export const projectsData = [
     imageUrl: uniShoes,
     link: "https://unishoes.vercel.app/",
   },
-  {
+  /*{
     title: "Brainwave",
     description:
       "This project involved building a responsive landing page with animations, utilizing various styling techniques and methodologies",
     tags: ["React", "Next.js", "Tailwind", "Javascript"],
     imageUrl: brainwave,
     link: "https://brainwave-three-beta.vercel.app/",
+  },*/
+
+  {
+    title: "AI Chatbot",
+    description:
+      "This project involved building an AI Chatbot powered by GeminiAI or OpenAI. The live version currently runs on GeminiAI.",
+    tags: ["Next.js", "Tailwind", "Typescript", "GeminiAI"],
+    imageUrl: aichatbot,
+    link: "https://chatbot-gemini-openai.vercel.app/",
   },
   {
     title: "Travel App",
